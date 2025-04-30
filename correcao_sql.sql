@@ -54,3 +54,23 @@ update brinquedos
 set Qtd_brinq = Qtd_brinq + 10
 where val_brinq = val_brinq < 50.00;
 select * from brinquedos;
+
+update brinquedos
+set idade_brinq = idade_brinq - 1
+where Nome_brinq Like '%Bêbê%';
+select * from brinquedos
+
+update brinquedos
+set val_brinq = val_brinq + 20
+where Nome_brinq Like '%galinha%'
+and
+idade_brinq - 1;
+select * from brinquedos
+
+
+update brinquedos
+set val_brinq = val_brinq + 5
+where Nome_brinq Like '%batata%'
+or
+Where Nome_brinq Like '%batatinha%';
+select * from brinquedos
