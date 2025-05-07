@@ -74,3 +74,19 @@ where Nome_brinq Like '%batata%'
 or
 Where Nome_brinq Like '%batatinha%';
 select * from brinquedos
+
+update brinquedos
+set val_brinq = val_brinq + 20
+and
+set Qtd_brinq = Qtd_brinq - 5
+and
+set idade_brinq = idade_brinq + 1
+where val_brinq between 300.00 and 100;
+select * from brinquedos;
+
+where val_brinq <= 30.00 and >= 100 Like '%B%';
+
+update brinquedos
+set val_brinq = val_brinq * 1.1
+where val_brinq between 100.00 and 150.00;
+select * from brinquedos
